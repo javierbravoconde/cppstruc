@@ -76,6 +76,8 @@ private:
 	boost::shared_ptr<Cell<T> > _tail;
 };
 
+
+//Reference: http://web.stanford.edu/class/cs107l/handouts/04-Custom-Iterators.pdf
 template<typename T>
 class mylist_iterator: public std::iterator<std::forward_iterator_tag, T> {
 	friend class List<T> ;
